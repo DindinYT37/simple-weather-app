@@ -1,5 +1,12 @@
+// DOM Elements
 const searchBtn = document.getElementById('search');
 const locationInput = document.getElementById('location');
+const devToggle = document.getElementById('dev-toggle');
+const devMenu = document.querySelector('.dev-menu');
+const devWeather = document.getElementById('dev-weather');
+const devWind = document.getElementById('dev-wind');
+const devHumidity = document.getElementById('dev-humidity');
+const devApply = document.getElementById('dev-apply');
 
 // API Calls
 async function getCoordinates(city) {
