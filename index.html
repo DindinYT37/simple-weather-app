@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Weather dashboard container -->
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="location" placeholder="Enter city name">
+            <button id="search">Search</button>
+        </div>
+        
+        <div class="weather-info">
+            <div class="current-weather">
+                <h2 id="location-name">--</h2>
+                <div class="temp-box">
+                    <span id="temperature">--</span>°C
+                </div>
+                <div class="weather-condition" id="condition">--</div>
+            </div>
+            
+            <div class="weather-details">
+                <div class="detail">
+                    <span class="label">Humidity</span>
+                    <span id="humidity">--%</span>
+                </div>
+                <div class="detail">
+                    <span class="label">Wind Speed</span>
+                    <span id="wind-speed">-- km/h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Developer tools panel -->
+    <div class="dev-controls">
+        <button id="dev-toggle" class="dev-toggle">⚙️</button>
+        <div class="dev-menu">
+            <h3>Developer Controls</h3>
+            <div class="dev-item">
+                <label>Weather Type:</label>
+                <select id="dev-weather">
+                    <option value="clear">Clear</option>
+                    <option value="cloudy">Cloudy</option>
+                    <option value="rainy">Rainy</option>
+                </select>
+            </div>
+            <div class="dev-item">
+                <label>Cloud Coverage:</label>
+                <select id="dev-cloud-intensity">
+                    <option value="scattered">Scattered (20%)</option>
+                    <option value="broken">Broken (50%)</option>
+                    <option value="overcast">Overcast (90%)</option>
+                </select>
+            </div>
+            <div class="dev-item">
+                <label>Rain Intensity:</label>
+                <select id="dev-rain-intensity">
+                    <option value="light">Light Rain</option>
+                    <option value="moderate">Moderate Rain</option>
+                    <option value="heavy">Heavy Rain</option>
+                </select>
+            </div>
+            <div class="dev-item">
+                <label>Wind Speed:</label>
+                <input type="range" id="dev-wind" min="0" max="40" value="0">
+                <span id="dev-wind-value">0 km/h</span>
+            </div>
+            <div class="dev-item">
+                <label>Humidity:</label>
+                <input type="range" id="dev-humidity" min="0" max="100" value="50">
+                <span id="dev-humidity-value">50%</span>
+            </div>
+            <button id="dev-apply">Apply Changes</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
