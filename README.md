@@ -17,6 +17,10 @@ A beautiful, interactive weather dashboard with real-time weather animations and
 - 📱 Responsive design
 - 🌈 Beautiful gradients for different weather states
 
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## 🚀 Installation
 
 1. Download the three files (`index.html`, `main.css`, and `app.js`)
